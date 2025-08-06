@@ -1057,8 +1057,12 @@ flex-direction: column;
     width: 100%;
     text-align: center;
   }
- 
-  
+   .case{
+    font-size: 1.4rem;
+  }
+  .case strong{
+    font-size: 1.7rem;
+  }
   .top-section {
     padding: 1rem;
     gap: 1rem;
