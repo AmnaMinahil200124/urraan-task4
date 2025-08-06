@@ -301,15 +301,6 @@ input::placeholder {
   opacity: 0;
 }
 
-<<<<<<< HEAD
-=======
-.top-wrapper {
-  width: 100%;
-  background: url("./images/hr_shadow.png") no-repeat bottom center;
-  padding-bottom: 1.5625rem;
-}
-
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 .top-section {
   width: 100%;
   background: url("./images/hr_shadow.png") no-repeat bottom center;
@@ -324,7 +315,6 @@ input::placeholder {
 
 .left-box {
   width: 30%;
-<<<<<<< HEAD
   background: transparent;
   padding: 1.5rem;
   display: flex;
@@ -336,25 +326,6 @@ input::placeholder {
   height: 100%;
   display: flex;
   flex-direction: column;
-=======
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  background: #fff;
-  padding: 10px;
-}
-
-.content-container {
-  align-items: flex-start;
-  
-  
-}
-.text-container{
- 
-   display: flex;
-}
-.img-right {
-  margin-left: 2rem;
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 h3 {
@@ -392,13 +363,7 @@ display: flex;
 }
 
 .paragraph {
-<<<<<<< HEAD
   flex: 1;
-=======
-  
-  width: 14rem;
-  
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 .paragraph p {
@@ -414,28 +379,16 @@ display: flex;
 }
 
 .img-icon {
-<<<<<<< HEAD
   height: 100px;
   width: 80px;
   object-fit: contain;
-=======
-  height: 8rem;
-  width: 6rem;
- 
-  
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 .but {
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
   margin-top: auto;
-=======
-  padding-left: 3rem;
- padding-top: 20px;
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 .line {
@@ -478,7 +431,6 @@ display: flex;
   height: 0.875rem;
 }
 
-<<<<<<< HEAD
 .mid {
   width: 40%;
   display: flex;
@@ -497,31 +449,13 @@ display: flex;
 
 .law-blog{
  border-bottom:  2px solid rgb(240, 234, 234);
-=======
-.mid{
-  width: 40%;
-}
-.law-blog {
-  grid-column: 2;
-  grid-row: 1;
-  background: #fff;
-  padding: 20px; 
-  border-bottom: 0.5px solid  rgb(224, 217, 217);
-  width: 29.5rem;
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 .text-image {
   display: flex;
-<<<<<<< HEAD
   gap: 1.5rem;
   align-items: center;
   height: 100%;
-=======
-  background: #fff;
-  border-left: 1.5px solid rgb(240, 234, 234);
-  border-right: 1.5px solid rgb(240, 234, 234);;
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 .text {
@@ -562,53 +496,26 @@ display: flex;
 }
 
 .image img {
-<<<<<<< HEAD
   width: 150px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
   margin-bottom: 3rem;
-=======
-  
-  width: 10rem;
-  max-width: 180px;
-  height: auto;
-  object-fit: contain;
-  margin: 0 0.5rem 2rem 0;
-}
-
-.case-results {
-  grid-column: 2;
-  grid-row: 2;
-  background: #fff;
-  padding: 15px;
-  border-top: 0.5px solid  rgb(224, 217, 217);
-  width: 29.5rem;
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 
 .right-box {
-<<<<<<< HEAD
   width: 30%;
   background: transparent;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-=======
-  width: 90%;
-  grid-column: 3;
-  grid-row: 1 / span 2;
-  background: #fff;
-  padding: 14px;
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 
 .badges {
   display: flex;
   justify-content: start;
-<<<<<<< HEAD
   gap: 1rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
@@ -625,20 +532,6 @@ display: flex;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-=======
-  gap: 1.25rem;
-  margin-bottom: 5px;
-  height: 110px;
-}
-
-
-
-  .right-box h3 {
- color: #554f4f;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5625rem;
- 
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 }
 
 .right-box p {
@@ -916,7 +809,7 @@ flex-direction: column;
     max-width: 100%;
   }
 }
-
+ /* desktop */
 @media (max-width: 1200px) {
   body {
     overflow-x: hidden;
@@ -927,7 +820,8 @@ flex-direction: column;
     max-width: 100%;
     padding: 1.5rem;
   }
-  
+
+
 
  .left-box,
   .mid,
@@ -1008,6 +902,22 @@ flex-direction: column;
   .top-section {
     flex-direction: column;
     gap: 1.5rem;
+  }
+    .header_section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .logo img{
+    width:550rem;
+    
+   
+  }
+  
+  .contact {
+    text-align: center;
+    margin-left: 0;
   }
 
   .left-box,
@@ -1119,7 +1029,6 @@ flex-direction: column;
 
 
 
-<<<<<<< HEAD
 
 /* Tablet Portrait */
 @media (max-width: 768px) {
@@ -1605,6 +1514,4 @@ flex-direction: column;
     max-width: 100%;
   }
 }
-=======
->>>>>>> f06945088a4eb88f2a4ed113a84ec5747ef0a33c
 
