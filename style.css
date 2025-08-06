@@ -51,7 +51,7 @@ display: inline-block;
 }
 
 .para1 {
-  font-size: 3.7rem;
+  font-size: 3.55rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #2b2b2b;
@@ -59,7 +59,7 @@ display: inline-block;
 
 .para2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #5a5353;
 }
@@ -145,7 +145,7 @@ display: inline-block;
 
 .case {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   color: #333;
   font-weight: 600;
   padding: 0 2rem;
@@ -154,7 +154,7 @@ display: inline-block;
 .case strong {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1c3f69;
-  font-size: 2.61rem;
+  font-size: 2.58rem;
   font-weight: 700;
   letter-spacing: 1px;
   
@@ -173,6 +173,7 @@ form {
   font-weight: 500;
   color: #2c2929;
   margin: 1vh 2vw;
+  
 }
 
 .form-body {
@@ -192,6 +193,7 @@ form {
   display: flex;
   align-items: center;
   margin-bottom: 1.5vh;
+  
 }
 
 .input-label {
@@ -202,26 +204,29 @@ form {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
 .input-pair input {
   flex: 1;
-  padding: 0.5em;
+  padding: 0.3rem 0.9rem;
   font-size: 0.875rem;
   border: 1px solid #aaa;
   box-sizing: border-box;
 }
   
 .img_center {
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
+  margin-bottom: 20px;
 }
 
 .confidential {
-  width: 50%;
-  max-width: 180px;
-  height: auto;
-  transform: rotate(15deg);
+  width: 100%;
+  max-width: 215px;
+  height: 3.7rem;
+  transform: rotate(8deg);
   margin-left: 1vw;
   filter: saturate(200%);
 }
@@ -296,252 +301,244 @@ input::placeholder {
   opacity: 0;
 }
 
-.top-wrapper {
-  background: url("./images/hr_shadow.png") no-repeat bottom center;
-  background-size: 100% 0.625rem;
-  padding-bottom: 1.5625rem;
-}
-
 .top-section {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  margin: auto;
-  padding: 10px 20px;
-  column-gap: 3rem;
+  width: 100%;
+  background: url("./images/hr_shadow.png") no-repeat bottom center;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 2rem;
+  max-width: 1200px;
+  
 }
 
 .left-box {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  background: #fff;
-  padding: 10px;
+  width: 30%;
+  background: transparent;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.content-container {
-  align-items: flex-start;
-  
-  
-}
-.text-container{
-  width: 100%;
-   display: flex;
-}
 .img-right {
-  margin-left: 2rem;
-  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 600;
   font-size: 1.75rem;
- color: #554f4f;
-
+  color: #554f4f;
+  margin-bottom: 1rem;
 }
 
 .red {
   color: #9c2929;
   font-weight: 600;
-  font-size: 1.75rem;
 }
 
 .highlight {
-  font-size: 1.28rem;
+  font-size: 1.25rem;
   color: #8f0505;
   font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 0.9rem;
-  margin-top: 8px;
-  
- 
+  margin-bottom: 1rem;
 }
 
-.text-content {
+.img-para {
   display: flex;
-  align-items: center;
- 
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex: 1;
 }
 
 .paragraph {
-  width: 14rem;
-  
+  flex: 1;
 }
 
 .paragraph p {
-  font-size: 1.25rem;
-  color: rgb(95, 90, 90) ;
-font-family: "Calibri", sans-serif;
-  line-height: 1;
-  padding-bottom: 0.625rem;
+  font-size: 1.1rem;
+  color: rgb(95, 90, 90);
+  font-family: "Calibri", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
 .img_div {
-  width: 15%;
-  margin: 20px;
   display: flex;
+  align-items: center;
 }
 
 .img-icon {
-  height: 8.5rem;
-  width: 5.95rem;
-  margin-top: 4rem;
- 
-  
+  height: 100px;
+  width: 80px;
+  object-fit: contain;
 }
+
 .but {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 1.6rem;
- padding-top: 10px;
+  margin-top: auto;
 }
 
 .line {
-  border-top: 0.0625rem solid rgb(201, 188, 188);
-  margin-top: 0.75rem;
-  width: 15rem;
+  border-top: 1px solid rgb(201, 188, 188);
+  width: 100%;
+  max-width: 200px;
 
 }
 
 .line2 {
-  border-top: 0.065rem solid rgb(201, 188, 188);
-  margin-top: 0.75rem;
-  width: 13rem;
+  border-top: 1px solid rgb(201, 188, 188);
+  width: 100%;
+  max-width: 200px;
+ 
 }
 
 .button2 {
-  max-width: 100%;
   background-color: rgb(166, 2, 6);
-  width: 8.75rem;
-  height: 1.89rem;
+  width: 140px;
+  height: 35px;
   border: none;
-  font-size: 0.968rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0.25rem 0.375rem  rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #8a0205;
 }
 
 .bullet {
   margin-left: 0.5rem;
-  height: 0.98rem;
+  height: 0.875rem;
 }
 
-.law-blog {
-  grid-column: 2;
-  grid-row: 1;
-  background: #fff;
-  padding: 20px;
-  border-bottom: 1.5px solid  rgb(224, 217, 217);
+.mid {
+  width: 40%;
+  display: flex;
+    border-left: 2px solid rgb(240, 234, 234);
+  border-right: 2px solid rgb(240, 234, 234);
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.law-blog, .case-results {
+  background: transparent;
+  padding: 1.5rem;
+
+  height: 100px;
+}
+
+.law-blog{
+ border-bottom:  2px solid rgb(240, 234, 234);
 }
 
 .text-image {
   display: flex;
-  background: #fff;
-  border-left: 1.5px solid rgb(240, 234, 234);
-  border-right: 1.5px solid rgb(240, 234, 234);
+  gap: 1.5rem;
+  align-items: center;
+  height: 100%;
 }
 
 .text {
   flex: 1;
-  padding-left: 1rem;
 }
 
 .text h4 {
- 
   font-family: "Georgia", "Times New Roman", serif;
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1;
+  margin-bottom: 0.5rem;
 }
 
 .text h4 .base {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-color: #554f4f;
+  color: #554f4f;
   font-size: 1.75rem;
-  font-weight: 00;
+  font-weight: 600;
 }
 
 .text p {
- font-size: 1.2rem;
- color: rgb(95, 90, 90) ;
+  font-size: 1.1rem;
+  color: rgb(95, 90, 90);
   font-family: "Calibri", sans-serif;
   font-weight: 500;
-  line-height: 1;
- 
+  line-height: 1.3;
+  margin-bottom: 1rem;
 }
 
 .text p .one,
 .text p .two {
   display: block;
 }
-.image{
-  width: 50%;
+
+.image {
+  flex-shrink: 0;
 }
 
 .image img {
-  
-  width: 11rem;
-  max-width: 180px;
+  width: 150px;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
-  margin: 0 0.5rem 2rem 0;
-}
-
-.case-results {
-  grid-column: 2;
-  grid-row: 2;
-  background: #fff;
-  padding: 15px;
+  margin-bottom: 3rem;
 }
 
 .right-box {
-  grid-column: 3;
-  grid-row: 1 / span 2;
-  background: #fff;
-  padding: 30px;
-  margin-left: -40px;
+  width: 30%;
+  background: transparent;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .badges {
   display: flex;
   justify-content: start;
-  gap: 1.25rem;
-  margin-bottom: 3px;
-  
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
-.badge-img1 {
-width: 8.5rem;
-height: 77%;
-
+.badge-img1, .badge-img2 {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
 }
-.badge-img2 {
-  width: 7rem;
-height: 78%;
-}
-
 
 .right-box h3 {
- color: #554f4f;
+  color: #554f4f;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5625rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .right-box p {
-  
-  font-size: 1.12rem;
- color: rgb(95, 90, 90) ;
+  font-size: 1.1rem;
+  color: rgb(95, 90, 90);
   font-family: "Calibri", sans-serif;
-  line-height: 1;
- 
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  flex: 1;
 }
 
 .container {
+  width: 100%;
   display: flex;
   padding: 1.25rem;
   gap: 1.875rem;
@@ -552,7 +549,7 @@ height: 78%;
 }
 .sidebar-left {
   margin-left: 24px;
-  width: 26%;
+  width: 30%;
 }
 
 h2 {
@@ -648,10 +645,8 @@ color: #554f4f;
 }
 
 .sidebar-right {
-  width: 10%;
- 
+  width: 20%;
 }
-
 .info-box {
   width: 12.5rem;
   font-family: Arial, sans-serif;
@@ -698,16 +693,15 @@ color: #554f4f;
 }
 
 .badge {
-  margin-right: -5rem;
+  margin-right: 2rem;
   display: flex;
-  flex-direction: column;
+flex-direction: column;
     justify-content: center;
   align-items: center;
 }
 
 .badge img {
-
-  margin: 2rem 0;
+  gap: 5rem;
   display: block;
 
 }
@@ -722,37 +716,45 @@ color: #554f4f;
 .social {
   margin-bottom: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid  rgb(112, 107, 107);              
-  box-shadow: 0 4px 0.6rem -6px rgba(0, 0, 0, 0.4);
-  width: 13rem;
-
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
-.social .base{
+.follow{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-color: #554f4f;
   font-size: 1.75rem;
-  font-weight: 600;
+  color: #554f4f;
+  font-weight: 900;
   margin: 0.5rem 0;
+  text-align: center;
+  position: relative;
+  border-bottom: 2px solid rgb(99, 91, 91); 
+  box-shadow: 0rem 0.1rem 0.05rem 0 rgb(129, 126, 126);
+  width: 12rem;
 }
-.base span{
-  color: #9c2929;
-  font-weight: 600;
+
+.follow span{
+  color:  #9c2929;
   font-size: 1.75rem;
+  font-weight: 700;
 }
 
-.icon {
+.icons {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5.5rem;
+  justify-content: center;
+  align-self: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.icon img {
-  width: 7rem;
-  height: 2.4rem;
-  margin-right: 1rem;
+.icons img {
+  width: 35px;
+  height: 35px;
 }
 .red-line{
   background-color: rgb(112, 19, 19);
@@ -761,476 +763,732 @@ color: #554f4f;
  box-shadow: 0 15px 15px 2px  rgba(15, 14, 14, 0.4);
 }
 
-/* ========== MEDIA QUERIES ========== */
 
-/* For very large screens (above 1600px) */
-@media (min-width: 1600px) {
-  .main_content {
-    margin: 0 15vw;
+@media (max-width: 1400px) {
+  body {
+    overflow-x: hidden;
   }
-}
-
-/* For laptops/desktops (1024px to 1599px) */
-@media (max-width: 1599px) {
-  .logo img {
-    width: 45vw;
+  
+  .practice-container h2 {
+    font-size: 1.5rem;
   }
-
-  .contact {
-    font-size: 0.95rem;
-    padding: 1.5vh 1vw;
+  
+  .main-content h1 {
+    font-size: 2rem;
   }
-
-  .navbar a {
+  
+  .info-item h3 {
+    font-size: 1.75rem;
+  }
+  
+  .card-content h3 {
     font-size: 1.1rem;
   }
+.badge{
+ gap: 2rem;
+}
+  .social {
+    gap: 0.6rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header_section,
+  .main_section {
+    max-width: 100%;
+  }
+  
+  .top-section {
+  
+    max-width: 100%;
+  }
 }
 
-/* For tablets (768px to 1023px) */
-@media (max-width: 1023px) {
+@media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .top-section {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  
+
+ .left-box,
+  .mid,
+  .right-box {
+    width: 100%;
+  }
+  
+  .left-box{
+    align-items: center;
+  }
+  .mid {
+    flex-direction: row;
+    gap: 1rem;
+      border-top: 2px solid rgb(240, 234, 234);
+    border-bottom: 2px solid rgb(240, 234, 234);
+  }
+  
+  .law-blog,
+  .case-results {
+    flex: 1;
+    border-left: none;
+    border-right: none;
+  
+  }
+
+.law-blog{
+   border-bottom: none;
+}
+   .right-box{
+    align-items: center;
+  }
+   .main_section {
+    flex-direction: column;
+  }
+  
+  .left-banner,
+  .right-form {
+    max-width: 100%;
+  }
+  .practice-container h2 {
+    font-size: 1.4rem;
+  }
+  
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .info-item h3 {
+    font-size: 1.75rem;
+  }
+  
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  
+  .social {
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header_section,
+  .main_section {
+    margin: 0;
+    padding: 0 0.5rem;
+    max-width: 100%;
+  }
+  
+  .top-section {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+
+ /* Tablet Landscape */
+@media (max-width: 1024px) {
+  .top-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .left-box,
+  .mid,
+  .right-box {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .left-box {
+    align-items: center;
+  }
+
+  .mid {
+    flex-direction: row;
+    gap: 1rem;
+    border-top: 2px solid rgb(240, 234, 234);
+    border-bottom: 2px solid rgb(240, 234, 234);
+  }
+
+  .law-blog,
+  .case-results {
+    flex: 1;
+    border-left: none;
+    border-right: none;
+  }
+
+  .right-box {
+    align-items: center;
+  }
+
   .main_section {
     flex-direction: column;
-    padding: 3vh 4vw;
   }
 
   .left-banner,
   .right-form {
     max-width: 100%;
   }
-
-  .logo img {
-    width: 80vw;
-  }
-
-  .navbar ul {
-    justify-content: center;
-  }
-
-  .top-section {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    row-gap: 2rem;
-  }
-
-  .law-blog,
-  .case-results,
-  .right-box {
-    grid-column: 1 !important;
-  }
-
-  .right-box {
-    margin-left: 0;
-  }
-
-  .text-container {
+  .container {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .img-right {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .img_div {
-    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 100%;
   }
 
   .sidebar-left,
+  .main-content,
   .sidebar-right {
     width: 100%;
     margin: 0;
+    max-width: 100%;
   }
 
-  .main-content {
+  .info-box {
     width: 100%;
-  }
-
-  .menu-links {
-    font-size: 1.4rem;
-  }
-
-  .img3, .img4 {
-    width: 8rem;
-  }
-
-  .badge-img1, .badge-img2 {
-    width: 6rem;
-  }
-
-  .social {
-    width: 100%;
-  }
-}
-
-/* For mobile phones (480px to 767px) */
-@media (max-width: 767px) {
-  .header_section {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact {
-    align-items: flex-start;
-    margin-right: 0;
-    padding: 1vh 2vw;
-  }
-
-  .navbar ul {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem 1rem;
   }
 
-  .navbar a {
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-
-  .para1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .para2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .form-fields {
-    width: 100%;
-  }
-
-  .input-label {
-    width: 100%;
-    margin-bottom: 0.3rem;
-  }
-
-  .input-pair {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .confidential {
-    width: 80%;
-    margin-left: 0;
-  }
-
-  .form-body {
-    flex-direction: column;
-  }
-
-  .img_center {
-    justify-content: center;
-  }
-
-  .questions, .case, .info_p, .highlight {
-    text-align: center;
-  }
-
-  .button1 {
-    font-size: 1.1rem;
-    padding: 0.5em 0.8em;
-  }
-
-  .badge-img1,
-  .badge-img2 {
-    width: 5rem;
-  }
-
-  .text-content {
-    flex-direction: column;
-  }
-
-  .paragraph {
-    width: 100%;
-  }
-
-  .text h4 {
+  .practice-container h2 {
     font-size: 1.4rem;
   }
 
-  .text p {
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .info-item h3 {
+    font-size: 1.75rem;
+  }
+
+  .card-content h3 {
     font-size: 1rem;
-  }
-
-  .image img {
-    width: 100%;
-  }
-
-  .card {
-    flex-direction: column;
-  }
-
-  .line,
-  .line2 {
-    width: 100%;
-  }
-
-  .learn-more {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .menu-links {
-    font-size: 1.2rem;
-  }
-
-  .cta-btn {
-    font-size: 0.875rem;
-    padding: 0.5rem;
   }
 
   .icon {
-    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
     align-items: center;
   }
 
   .icon img {
-    margin: 0.5rem 0;
-  }
-}
-
-/* For very small devices (below 480px) */
-@media (max-width: 479px) {
-  .para1 {
-    font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
   }
 
-  .underline {
-    font-size: 1.2rem;
+  .social {
+    gap: 0.4rem;
+    align-items: center;
+    text-align: center;
   }
 
-  .case strong {
-    font-size: 1.8rem;
-  }
-
-  .input-label,
-  .input-pair input,
-  form textarea {
-    font-size: 0.8rem;
-  }
-
-  .button2 {
-    width: 100%;
-  }
-
-  .navbar ul {
-    gap: 1rem;
-  }
-
-  .social,
-  .icon {
-    width: 100%;
-  }
-}
-
-
-
-/* ==================== 1400px and below ==================== */
-@media (max-width: 1400px) {
-  .logo img {
-    width: 40vw;
-  }
-
+  .header_section,
   .main_section {
-    gap: 1.5vw;
-    padding: 4vh 3vw;
-  }
-
-  .right-form {
-    font-size: 0.83rem;
-  }
-}
-
-/* ==================== 1200px and below ==================== */
-@media (max-width: 1200px) {
-  .left-banner,
-  .right-form {
-    flex: 1 1 48%;
-  }
-
-  .text-container {
-    flex-direction: column;
-  }
-
-  .img-right {
-    width: 100%;
-    margin: 1rem 0 0;
-  }
-
-  .top-section {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-  }
-
-  .badge-img1,
-  .badge-img2 {
-    width: 6rem;
-  }
-}
-
-/* ==================== 992px and below ==================== */
-@media (max-width: 992px) {
-  .header_section {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .logo img {
-    width: 80vw;
-  }
-
-  .navbar ul {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .main_section {
-    flex-direction: column;
-  }
-
-  .left-banner,
-  .right-form {
+    margin: 0;
+    padding: 0 0.5rem;
     max-width: 100%;
   }
 
   .top-section {
-    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0 0.5rem;
+    max-width: 100%;
   }
+}
 
-  .right-box {
+
+
+
+/* Tablet Portrait */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+ 
+   .header_section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .contact {
+    text-align: center;
     margin-left: 0;
   }
-
-  .text-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .card {
-    flex-direction: column;
-  }
-
-  .icon {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* ==================== 768px and below ==================== */
-@media (max-width: 768px) {
-  .para1 {
-    font-size: 2.2rem;
-  }
-
-  .para2 {
-    font-size: 1.2rem;
-  }
-
-  .case strong {
-    font-size: 2rem;
-  }
-
-  .form-fields {
-    width: 100%;
-  }
-
-  .form-body {
-    flex-direction: column;
-  }
-
-  .img_center {
-    justify-content: center;
-  }
-
-  .input-label {
-    width: 100%;
-    margin-bottom: 4px;
-  }
-
-  .input-pair {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .button1 {
-    font-size: 1.1rem;
-  }
-}
-
-/* ==================== 576px and below ==================== */
-@media (max-width: 576px) {
+  
   .navbar ul {
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
   }
-
+  
   .navbar a {
-    font-size: 1rem;
-  }
-
-  .logo img {
-    width: 90vw;
-  }
-
-  .questions,
-  .case,
-  .info_p {
+    width: 100%;
     text-align: center;
   }
-
-  .form-fields {
-    width: 100%;
+ 
+  
+  .top-section {
+    padding: 1rem;
+    gap: 1rem;
   }
 
-  .confidential {
-    width: 70%;
-    transform: rotate(10deg);
+  .left-box{
+    align-self: center;
   }
 
-  .menu-links {
+  .img_div{
+     align-self: center;
+  }
+  
+  .mid {
+    flex-direction: column;
+     border-left: 2px solid rgb(240, 234, 234);
+    border-right: 2px solid rgb(240, 234, 234);
+  }
+  
+  .law-blog,
+  .case-results {
+   
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  .img-para {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .text-image {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .image {
+    order: -1;
+  }
+  .right-box{
+    align-items: center;
+  }
+  
+  .main_section {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .container {
+  
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .sidebar-left,
+  .main-content,
+  .sidebar-right {
+    width:100%;
+    margin: 0;
+    max-width: 100%;
+  }
+ 
+  .card {
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-content {
+    padding: 0.75rem;
+  }
+  
+  .info-item {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .icon {
+    gap: 0.01rem;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .social {
+    gap: 0.5rem;
+  }
+  
+  .practice-container h2 {
     font-size: 1.3rem;
   }
-
-  .social {
-    width: 100%;
+  
+  .main-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .main-content p {
+    font-size: 0.95rem;
+  }
+  
+  .info-item h3 {
+    font-size: 1.75rem;
+  }
+  
+  .card-content h3 {
+    font-size: 0.95rem;
+  }
+  
+  .header_section,
+  .main_section {
+    margin: 0;
+    padding: 0 0.25rem;
+    max-width: 100%;
+  }
+  
+  .top-section {
+    margin: 0;
+    padding: 0 0.25rem;
+    max-width: 100%;
   }
 }
 
-/* ==================== 400px and below ==================== */
-@media (max-width: 400px) {
-  .para1 {
-    font-size: 1.7rem;
+/* Mobile Large */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
   }
-
-  .underline {
-    font-size: 1.1rem;
+ 
+.header_section,
+  .main_section,
+  .top-section,
+  .container {
+    padding: 0.5rem;
   }
-
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .text h4 {
+    font-size: 1.5rem;
+  }
+  
+  .text h4 .base {
+    font-size: 1.5rem;
+  }
+  
   .highlight {
     font-size: 1.1rem;
   }
-
-  .card-content h3 {
-    font-size: 1.2rem;
+  
+  .paragraph p {
+    font-size: 1rem;
   }
-
-  .text h4,
-  .red {
-    font-size: 1.4rem;
-  }
-
+  
   .text p {
     font-size: 1rem;
   }
+  
 
+  .right-box h3 {
+    display: flex;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  
+  .right-box p {
+    font-size: 1rem;
+  }
+  
+  .img-icon {
+    height: 80px;
+    width: 60px;
+  }
+  
+  .image img {
+    width: 80px;
+  }
+  
+  .badge-img1, .badge-img2 {
+    height: 80px;
+  }
+  
+  .text_detail {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .button1,
   .button2 {
     width: 100%;
+    justify-content: center;
+  }
+  
+  .right-form {
+    padding: 1rem;
+  }
+  
+  .left-box,
+  .law-blog,
+  .case-results,
+  .right-box {
+    padding: 1rem;
+  }
+  
+  .card-content {
+    padding: 0.75rem;
+  }
+  
+  .info-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .badge {
+    margin: 1rem 0;
+  }
+  
+  .container {
+    gap: 0.75rem;
+    padding: 0.5rem;
+    margin: 0;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  .sidebar-left,
+  .main-content,
+  .sidebar-right {
+    padding: 0.5rem;
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .practice-container h2 {
+    font-size: 1.25rem;
+  }
+  
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .info-item h3 {
+    font-size: 1.75rem;
+  }
+  
+  .cta-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .card-content h3 {
+    font-size: 1rem;
+  }
+  
+  .card-content a {
+    font-size: 0.8rem;
+  }
+  
+  .learn-more {
+    font-size: 1rem;
+  }
+  
+  .menu-links div {
     font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+  
+  .info-item p {
+    font-size: 0.85rem;
+  }
+  
+  .main-content p {
+    font-size: 0.9rem;
+  }
+
+  
+  
+  .header_section,
+  .main_section {
+    margin: 0;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+  
+  .top-section {
+    margin: 0;
+    padding: 0.5rem;
+    max-width: 100%;
   }
 }
 
 
+/* Mobile Small */
+@media (max-width: 360px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar ul {
+    padding: 0.5rem;
+  }
+  
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .left-box,
+  .mid,
+  .right-box {
+    padding: 0.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .text h4 {
+    font-size: 1.25rem;
+  }
+  
+  .text h4 .base {
+    font-size: 1.25rem;
+  }
+  
+  .highlight {
+    font-size: 1rem;
+  }
+  
+  .paragraph p {
+    font-size: 0.9rem;
+  }
+  
+  .text p {
+    font-size: 0.9rem;
+  }
+  
+  .right-box h3 {
+    font-size: 1.1rem;
+  }
+  
+  .right-box p {
+    font-size: 0.9rem;
+  }
+  
+  .img-icon {
+    height: 70px;
+    width: 50px;
+  }
+  
+  .image img {
+    width: 70px;
+  }
+  
+  .badge-img1, .badge-img2 {
+    height: 70px;
+  }
+  
+  .button2 {
+    width: 120px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  
+  .bullet {
+    height: 0.8rem;
+  }
+  
+  
+  .container {
+    padding: 0.5rem;
+    gap: 0.5rem;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .sidebar-left,
+  .main-content,
+  .sidebar-right {
+    padding: 0.25rem;
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .practice-container h2 {
+    font-size: 1.1rem;
+  }
+  
+  .main-content h1 {
+    font-size: 1.25rem;
+  }
+  
+  .main-content p {
+    font-size: 0.9rem;
+  }
+  
+  .info-item h3 {
+    font-size: 0.75rem;
+  }
+  
+  .info-item p {
+    font-size: 0.8rem;
+  }
+  
+  .cta-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .card-content h3 {
+    font-size: 1rem;
+  }
+  
+  .card-content a {
+    font-size: 0.8rem;
+  }
+  
+  .learn-more {
+    font-size: 1rem;
+  }
+  
+  .menu-links div {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+  
+  .badge{
+    margin: 0;
+  }
+  .social {
+    gap: 0.3rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .social .base {
+    font-size: 1rem;
+  } .header_section,
+  .main_section {
+    margin: 0;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+  
+  .top-section {
+    margin: 0;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+}
 
