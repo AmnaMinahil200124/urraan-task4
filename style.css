@@ -549,7 +549,6 @@ display: flex;
   padding: 1.25rem;
   gap: 1.875rem;
 }
-
 .practice-container {
   margin-right: 1.25rem;
 }
@@ -814,95 +813,29 @@ flex-direction: column;
   body {
     overflow-x: hidden;
   }
-
-  .top-section {
-    flex-direction: column;
-    max-width: 100%;
-    padding: 1.5rem;
-  }
-
-
-
- .left-box,
-  .mid,
-  .right-box {
-    width: 100%;
-  }
-  
-  .left-box{
-    align-items: center;
-  }
-  .mid {
-    flex-direction: row;
-    gap: 1rem;
-      border-top: 2px solid rgb(240, 234, 234);
-    border-bottom: 2px solid rgb(240, 234, 234);
-  }
-  
-  .law-blog,
-  .case-results {
-    flex: 1;
-    border-left: none;
-    border-right: none;
-  
-  }
-
-.law-blog{
-   border-bottom: none;
-}
-   .right-box{
-    align-items: center;
-  }
-   .main_section {
-    flex-direction: column;
-  }
-  
-  .left-banner,
-  .right-form {
-    max-width: 100%;
-  }
-  .practice-container h2 {
-    font-size: 1.4rem;
-  }
-  
-  .main-content h1 {
-    font-size: 1.8rem;
-  }
-  
-  .info-item h3 {
-    font-size: 1.75rem;
-  }
-  
-  .card-content h3 {
-    font-size: 1rem;
-  }
-
-  
-  .social {
-    gap: 0.5rem;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .header_section,
-  .main_section {
-    margin: 0;
-    padding: 0 0.5rem;
-    max-width: 100%;
-  }
   
   .top-section {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-}
-
- /* Tablet Landscape */
-@media (max-width: 1024px) {
-  .top-section {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1.5rem;
   }
+  
+  .left-box {
+    width: 45%;
+  }
+  
+  .mid {
+    width: 45%;
+  }
+  
+  .right-box {
+    align-items: center;
+    width: 100%;
+    order: 3; 
+    margin-top: 1rem;
+  }
+}
+ /* Tablet Landscape */
+@media (max-width: 1024px) {
     .header_section {
     flex-direction: column;
     text-align: center;
@@ -911,45 +844,13 @@ flex-direction: column;
 
   .logo img{
     width:550rem;
-    
-   
   }
   
   .contact {
     text-align: center;
     margin-left: 0;
   }
-
-  .left-box,
-  .mid,
-  .right-box {
-    width: 100%;
-    margin: 0;
-    max-width: 100%;
-  }
-
-  .left-box {
-    align-items: center;
-  }
-
-  .mid {
-    flex-direction: row;
-    gap: 1rem;
-    border-top: 2px solid rgb(240, 234, 234);
-    border-bottom: 2px solid rgb(240, 234, 234);
-  }
-
-  .law-blog,
-  .case-results {
-    flex: 1;
-    border-left: none;
-    border-right: none;
-  }
-
-  .right-box {
-    align-items: center;
-  }
-
+  
   .main_section {
     flex-direction: column;
   }
@@ -958,19 +859,39 @@ flex-direction: column;
   .right-form {
     max-width: 100%;
   }
-  .container {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
-    max-width: 100%;
+
+
+   .left-box {
+    width: 40%;
+  }
+  
+  .mid {
+    width: 50%;
   }
 
-  .sidebar-left,
-  .main-content,
+ .container{
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .sidebar-left {
+    width: 45%;
+  }
+  
+  .main-content{
+    width: 45%;
+  }
+  
   .sidebar-right {
+    align-items: center;
     width: 100%;
-    margin: 0;
-    max-width: 100%;
+    order: 3; 
+    margin-top: 1rem;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
   }
 
   .L{
@@ -980,19 +901,6 @@ flex-direction: column;
   align-items: center;
  }
  
- .main-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
-  .info-box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .practice-container h2 {
     font-size: 1.4rem;
   }
@@ -1032,16 +940,7 @@ flex-direction: column;
     padding: 0 0.5rem;
     max-width: 100%;
   }
-
-  .top-section {
-    margin: 0;
-    padding: 0 0.5rem;
-    max-width: 100%;
-  }
 }
-
-
-
 
 /* Tablet Portrait */
 @media (max-width: 768px) {
@@ -1081,25 +980,41 @@ flex-direction: column;
     gap: 1rem;
   }
 
-  .left-box{
-    align-self: center;
+.left-box,
+  .mid,
+  .right-box {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    order: unset; 
+  }
+
+  .left-box {
+    align-items: center;
+  }
+
+  .mid {
+    flex-direction: column; 
+    gap: 1rem;
+    border-top: 2px solid rgb(240, 234, 234);
+    border-bottom: 2px solid rgb(240, 234, 234);
+  }
+
+  .law-blog,
+  .case-results {
+    flex: 1;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+
+  .right-box {
+    flex-direction: column;
+    align-items: center;
   }
 
   .img_div{
      align-self: center;
-  }
-  
-  .mid {
-    flex-direction: column;
-     border-left: 2px solid rgb(240, 234, 234);
-    border-right: 2px solid rgb(240, 234, 234);
-  }
-  
-  .law-blog,
-  .case-results {
-   
-    border-top: none;
-    border-bottom: none;
   }
   
   .img-para {
@@ -1117,16 +1032,13 @@ flex-direction: column;
   .image {
     order: -1;
   }
-  .right-box{
-    align-items: center;
-  }
   
   .main_section {
     padding: 1rem;
     gap: 1rem;
   }
+
   .container {
-  
     padding: 1rem;
     gap: 1rem;
     margin: 0 auto;
@@ -1141,12 +1053,9 @@ flex-direction: column;
     margin: 0;
     max-width: 100%;
   }
- .L{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
+  .sidebar-right{
+    gap: 3rem;
+  }
  
  .main-content{
   display: flex;
@@ -1296,6 +1205,18 @@ flex-direction: column;
     padding: 1rem;
   }
   
+  .sidebar-right{
+    display: flex;
+    flex-direction: column;
+    gap: none;
+  }
+  .info-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .card-content {
     padding: 0.75rem;
   }
